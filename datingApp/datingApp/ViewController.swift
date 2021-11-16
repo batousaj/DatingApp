@@ -17,8 +17,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func signInTab(_ sender: Any) {
-        _ = checkCorrect()
+    @IBAction func buttonMale(_ sender: Any) {
+        
+    }
+    
+    @IBAction func buttonFemale(_ sender: Any) {
+        
     }
     
     func checkCorrect() -> Int32 {
