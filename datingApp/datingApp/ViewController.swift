@@ -25,6 +25,22 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func signInByApple(_ sender: Any) {
+        
+    }
+    
+    @IBAction func signInByFacebook(_ sender: Any) {
+        
+    }
+    
+    @IBAction func loginUserNameTextField(_ sender: Any) {
+        
+    }
+    
+    @IBAction func loginPassTextField(_ sender: Any) {
+        
+    }
+    
     func checkCorrect() -> Int32 {
         var a:Int32?
         
