@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD03538127465C4D0048743D /* ActionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD03538027465C4D0048743D /* ActionUtil.swift */; };
+		FD03538327465FC90048743D /* MainLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD03538227465FC90048743D /* MainLoginViewController.swift */; };
+		FD03538527465FE20048743D /* MainLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD03538427465FE20048743D /* MainLoginModel.swift */; };
+		FD3DD01D2746660F00687304 /* TinEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3DD01C2746660F00687304 /* TinEngine.swift */; };
+		FD3DD01F2746661D00687304 /* TinConnectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3DD01E2746661D00687304 /* TinConnectionFactory.swift */; };
+		FD3DD021274666AF00687304 /* TinLibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3DD020274666AF00687304 /* TinLibraryAPI.swift */; };
 		FD928224274292C40042A399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD928223274292C40042A399 /* AppDelegate.swift */; };
 		FD928226274292C40042A399 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD928225274292C40042A399 /* SceneDelegate.swift */; };
 		FD928228274292C40042A399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD928227274292C40042A399 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD03538027465C4D0048743D /* ActionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionUtil.swift; sourceTree = "<group>"; };
+		FD03538227465FC90048743D /* MainLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginViewController.swift; sourceTree = "<group>"; };
+		FD03538427465FE20048743D /* MainLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginModel.swift; sourceTree = "<group>"; };
+		FD3DD01C2746660F00687304 /* TinEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinEngine.swift; sourceTree = "<group>"; };
+		FD3DD01E2746661D00687304 /* TinConnectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinConnectionFactory.swift; sourceTree = "<group>"; };
+		FD3DD020274666AF00687304 /* TinLibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinLibraryAPI.swift; sourceTree = "<group>"; };
 		FD928220274292C40042A399 /* datingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = datingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD928223274292C40042A399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD928225274292C40042A399 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD0353792746570F0048743D /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				FD03538227465FC90048743D /* MainLoginViewController.swift */,
+				FD03538427465FE20048743D /* MainLoginModel.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		FD03537C274657630048743D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FD03538027465C4D0048743D /* ActionUtil.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FD03537F274659530048743D /* ModelEngine */ = {
+			isa = PBXGroup;
+			children = (
+				FD3DD01C2746660F00687304 /* TinEngine.swift */,
+				FD3DD01E2746661D00687304 /* TinConnectionFactory.swift */,
+				FD3DD020274666AF00687304 /* TinLibraryAPI.swift */,
+			);
+			path = ModelEngine;
+			sourceTree = "<group>";
+		};
+		FD3DD01B274662DB00687304 /* MainAction */ = {
+			isa = PBXGroup;
+			children = (
+				FD928223274292C40042A399 /* AppDelegate.swift */,
+				FD928225274292C40042A399 /* SceneDelegate.swift */,
+				FD928227274292C40042A399 /* ViewController.swift */,
+			);
+			path = MainAction;
+			sourceTree = "<group>";
+		};
 		FD928217274292C40042A399 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +105,10 @@
 		FD928222274292C40042A399 /* datingApp */ = {
 			isa = PBXGroup;
 			children = (
-				FD928223274292C40042A399 /* AppDelegate.swift */,
-				FD928225274292C40042A399 /* SceneDelegate.swift */,
-				FD928227274292C40042A399 /* ViewController.swift */,
+				FD3DD01B274662DB00687304 /* MainAction */,
+				FD03537F274659530048743D /* ModelEngine */,
+				FD03537C274657630048743D /* Utilities */,
+				FD0353792746570F0048743D /* LoginView */,
 				FD928229274292C40042A399 /* Main.storyboard */,
 				FD92822C274292C50042A399 /* Assets.xcassets */,
 				FD92822E274292C50042A399 /* LaunchScreen.storyboard */,
@@ -138,9 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD3DD01F2746661D00687304 /* TinConnectionFactory.swift in Sources */,
+				FD03538327465FC90048743D /* MainLoginViewController.swift in Sources */,
 				FD928228274292C40042A399 /* ViewController.swift in Sources */,
+				FD03538527465FE20048743D /* MainLoginModel.swift in Sources */,
 				FD928224274292C40042A399 /* AppDelegate.swift in Sources */,
 				FD928226274292C40042A399 /* SceneDelegate.swift in Sources */,
+				FD03538127465C4D0048743D /* ActionUtil.swift in Sources */,
+				FD3DD01D2746660F00687304 /* TinEngine.swift in Sources */,
+				FD3DD021274666AF00687304 /* TinLibraryAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
