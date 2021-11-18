@@ -154,6 +154,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="signInButton:" destination="s1v-Yv-4MI" eventType="touchDown" id="te7-JL-r2T"/>
                                     <segue destination="hdo-Ip-Bb9" kind="show" id="v9R-iS-sR7"/>
                                 </connections>
                             </button>
@@ -182,6 +183,7 @@
                     <navigationItem key="navigationItem" id="lvK-ug-D5v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="s1v-Yv-4MI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2760.8695652173915" y="83.705357142857139"/>
         </scene>
