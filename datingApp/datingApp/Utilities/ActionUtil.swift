@@ -10,47 +10,31 @@ import UIKit
 
 class ActionUtilities : NSObject {
     
-    var shareInstance:ActionUtilities?
-    
-    func getInstance() {
-        shareInstance! = ActionUtilities.init()
-        
-    }
-    
-    func utilButtonWhiteView (_ buttionView : UIButton ,_ backgroundColor : UIColor ) {
-        let buttonLayer = CALayer()
-        
-        buttonLayer.borderColor = UIColor.white.cgColor
-        buttonLayer.cornerRadius = 5
+    static func styleButtonView (_ buttionView : UIButton ,_ backgroundColor : UIColor ) {
         
         buttionView.backgroundColor = backgroundColor
-        
-        buttionView.layer.addSublayer(buttonLayer)
+        buttionView.layer.borderWidth = 1
+
+        buttionView.layer.cornerRadius = 25.0
+        buttionView.tintColor = UIColor.white
         
     }
     
-    func utilLabelView(_ labelView: UILabel,_ backgroundColor : UIColor ) {
-        
-        let labelLayer = CALayer()
-        
-        labelLayer.borderColor = UIColor.gray.cgColor
-        labelLayer.cornerRadius = 5
+    static func styleLabelView(_ labelView: UILabel,_ backgroundColor : UIColor ) {
         
         labelView.backgroundColor = backgroundColor
-        
-        labelView.layer.addSublayer(labelLayer)
+        labelView.layer.borderColor = UIColor.green.cgColor
+        labelView.layer.borderWidth = 1
+
+        labelView.layer.cornerRadius = 25.0
+        labelView.tintColor = UIColor.white
     }
     
-    func utilTextfieldView(_ textView: UITextField,_ backgroundColor : UIColor ) {
+    static func styleTextField(_ textfield:UITextField) {
         
-        let textLayer = CALayer()
+        textfield.layer.borderWidth = 1
+        textfield.layer.borderColor = UIColor.gray.cgColor
         
-        textLayer.borderColor = UIColor.gray.cgColor
-        textLayer.cornerRadius = 5
-        
-        textView.backgroundColor = backgroundColor
-            
-        textView.layer.addSublayer(textLayer)
     }
     
 }
