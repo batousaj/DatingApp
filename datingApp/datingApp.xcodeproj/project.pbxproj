@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EA6B52127FC704400411C78 /* UserManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6B52027FC704400411C78 /* UserManagement.swift */; };
+		2EA6B52327FC705100411C78 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6B52227FC705100411C78 /* Validator.swift */; };
 		2EBA216827F98E4F00ED37AC /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA216727F98E4F00ED37AC /* MatchViewController.swift */; };
 		2EBA216A27F98E5D00ED37AC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA216927F98E5D00ED37AC /* ChatViewController.swift */; };
 		2EBA216C27F98E6D00ED37AC /* AdvertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA216B27F98E6D00ED37AC /* AdvertiseViewController.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		0A12C8F1C4A5117E46D4CE6E /* Pods-datingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-datingApp.release.xcconfig"; path = "Target Support Files/Pods-datingApp/Pods-datingApp.release.xcconfig"; sourceTree = "<group>"; };
+		2EA6B52027FC704400411C78 /* UserManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagement.swift; sourceTree = "<group>"; };
+		2EA6B52227FC705100411C78 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		2EBA216727F98E4F00ED37AC /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		2EBA216927F98E5D00ED37AC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2EBA216B27F98E6D00ED37AC /* AdvertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertiseViewController.swift; sourceTree = "<group>"; };
@@ -61,11 +65,12 @@
 		2EBA215F27F984E600ED37AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2EA6B52227FC705100411C78 /* Validator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		2EBA216027F984EF00ED37AC /* Views */ = {
+		2EBA216027F984EF00ED37AC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				FD928227274292C40042A399 /* ViewController.swift */,
@@ -74,19 +79,21 @@
 				2EBA216B27F98E6D00ED37AC /* AdvertiseViewController.swift */,
 				2EBA216D27F98E8C00ED37AC /* BuddyListViewController.swift */,
 			);
-			path = Views;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
-		2EBA216127F984F500ED37AC /* ViewController */ = {
+		2EBA216127F984F500ED37AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FD928223274292C40042A399 /* DatingAppDelegate.swift */,
 			);
-			path = ViewController;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2EBA216227F984FC00ED37AC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2EA6B52027FC704400411C78 /* UserManagement.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -152,9 +159,8 @@
 				2EBA216327F9850700ED37AC /* Utilities */,
 				2EBA215F27F984E600ED37AC /* Model */,
 				2EBA216227F984FC00ED37AC /* Helpers */,
-				2EBA216127F984F500ED37AC /* ViewController */,
-				2EBA216027F984EF00ED37AC /* Views */,
-				FD928223274292C40042A399 /* DatingAppDelegate.swift */,
+				2EBA216127F984F500ED37AC /* Views */,
+				2EBA216027F984EF00ED37AC /* ViewController */,
 				FD928229274292C40042A399 /* Main.storyboard */,
 				FD92822C274292C50042A399 /* Assets.xcassets */,
 				FD92822E274292C50042A399 /* LaunchScreen.storyboard */,
@@ -282,9 +288,11 @@
 				2EBA216827F98E4F00ED37AC /* MatchViewController.swift in Sources */,
 				FD928228274292C40042A399 /* ViewController.swift in Sources */,
 				2EBA216C27F98E6D00ED37AC /* AdvertiseViewController.swift in Sources */,
+				2EA6B52327FC705100411C78 /* Validator.swift in Sources */,
 				FD928224274292C40042A399 /* DatingAppDelegate.swift in Sources */,
 				2EBA216A27F98E5D00ED37AC /* ChatViewController.swift in Sources */,
 				2EBA217627F991F800ED37AC /* Constanst.swift in Sources */,
+				2EA6B52127FC704400411C78 /* UserManagement.swift in Sources */,
 				2EBA217427F9916C00ED37AC /* LogS.swift in Sources */,
 				2EBA216E27F98E8C00ED37AC /* BuddyListViewController.swift in Sources */,
 				2EBA217027F9909000ED37AC /* Reachability.swift in Sources */,
