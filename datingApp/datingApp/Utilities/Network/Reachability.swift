@@ -8,13 +8,6 @@
 import Foundation
 import Reachability
 
-
-enum NetworkState {
-    case kUnavailable
-    case kWifi
-    case kCellular
-}
-
 class ReachableManagement {
     
     var reachability: Reachability?
@@ -72,21 +65,21 @@ class ReachableManagement {
 // Observer function in NotificationCenter
     @objc func onReachabilityChanged(_ notification:Notification) {
         let reachable = notification.object as! Reachability
-        var networkState:NetworkState!
+        var state:NetworkState?
         switch reachable.connection {
             case Reachability.Connection.unavailable:
-                networkState = NetworkState.kUnavailable
+                state = NetworkState.kConnectionUnavailable
                 break
             case Reachability.Connection.cellular:
-                networkState = NetworkState.kCellular
+                state = NetworkState.kConnectionCellular
                 break
             case Reachability.Connection.wifi:
-                networkState = NetworkState.kWifi
+                state = NetworkState.kConnectionWifi
                 break
             default:
                 break
         }
-        NotificationCenter.default.post(name: .networkReachabilityChanged, object: networkState)
+        NotificationCenter.default.post(name: .networkReachabilityChanged, object: state!)
     }
 }
 

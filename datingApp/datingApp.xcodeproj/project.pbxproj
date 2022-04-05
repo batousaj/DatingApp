@@ -18,6 +18,10 @@
 		2EBA217427F9916C00ED37AC /* LogS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA217227F9916C00ED37AC /* LogS.swift */; };
 		2EBA217627F991F800ED37AC /* Constanst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA217527F991F800ED37AC /* Constanst.swift */; };
 		A372CF243CE43AF7F1AFB5CA /* Pods_datingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CCD28D0BD13D0DF5A11BB2 /* Pods_datingApp.framework */; };
+		B10E4FFD27FC86AA009DCB90 /* Navigator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E4FFC27FC86AA009DCB90 /* Navigator+Extension.swift */; };
+		B10E4FFF27FC91E7009DCB90 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10E4FFE27FC91E7009DCB90 /* MainView.xib */; };
+		B10E500127FCA2B7009DCB90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B10E500027FCA2B7009DCB90 /* Localizable.strings */; };
+		B10E500327FCA77F009DCB90 /* ThemeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E500227FCA77F009DCB90 /* ThemeApp.swift */; };
 		FD928224274292C40042A399 /* DatingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD928223274292C40042A399 /* DatingAppDelegate.swift */; };
 		FD928226274292C40042A399 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD928225274292C40042A399 /* SceneDelegate.swift */; };
 		FD928228274292C40042A399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD928227274292C40042A399 /* ViewController.swift */; };
@@ -40,6 +44,10 @@
 		2EBA217527F991F800ED37AC /* Constanst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constanst.swift; sourceTree = "<group>"; };
 		47CCD28D0BD13D0DF5A11BB2 /* Pods_datingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_datingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		930B5ECBEE3656F3AA4B0E9A /* Pods-datingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-datingApp.debug.xcconfig"; path = "Target Support Files/Pods-datingApp/Pods-datingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B10E4FFC27FC86AA009DCB90 /* Navigator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigator+Extension.swift"; sourceTree = "<group>"; };
+		B10E4FFE27FC91E7009DCB90 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		B10E500027FCA2B7009DCB90 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B10E500227FCA77F009DCB90 /* ThemeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeApp.swift; sourceTree = "<group>"; };
 		FD928220274292C40042A399 /* datingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = datingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD928223274292C40042A399 /* DatingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingAppDelegate.swift; sourceTree = "<group>"; };
 		FD928225274292C40042A399 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +73,7 @@
 		2EBA215F27F984E600ED37AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2EA6B52227FC705100411C78 /* Validator.swift */,
+				2EA6B52027FC704400411C78 /* UserManagement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,7 +101,7 @@
 		2EBA216227F984FC00ED37AC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				2EA6B52027FC704400411C78 /* UserManagement.swift */,
+				2EA6B52227FC705100411C78 /* Validator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -101,10 +109,9 @@
 		2EBA216327F9850700ED37AC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2EBA217227F9916C00ED37AC /* LogS.swift */,
-				2EBA217127F9916C00ED37AC /* UtilDate.swift */,
-				2EBA216F27F9909000ED37AC /* Reachability.swift */,
-				2EBA217527F991F800ED37AC /* Constanst.swift */,
+				B10E4FFB27FC8683009DCB90 /* Tools */,
+				B10E4FFA27FC8675009DCB90 /* Network */,
+				B10E4FF927FC8669009DCB90 /* UI */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -132,6 +139,34 @@
 				0A12C8F1C4A5117E46D4CE6E /* Pods-datingApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B10E4FF927FC8669009DCB90 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B10E4FFC27FC86AA009DCB90 /* Navigator+Extension.swift */,
+				B10E500227FCA77F009DCB90 /* ThemeApp.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B10E4FFA27FC8675009DCB90 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA216F27F9909000ED37AC /* Reachability.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B10E4FFB27FC8683009DCB90 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA217227F9916C00ED37AC /* LogS.swift */,
+				2EBA217127F9916C00ED37AC /* UtilDate.swift */,
+				2EBA217527F991F800ED37AC /* Constanst.swift */,
+				B10E500027FCA2B7009DCB90 /* Localizable.strings */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		FD928217274292C40042A399 = {
@@ -162,6 +197,7 @@
 				2EBA216127F984F500ED37AC /* Views */,
 				2EBA216027F984EF00ED37AC /* ViewController */,
 				FD928229274292C40042A399 /* Main.storyboard */,
+				B10E4FFE27FC91E7009DCB90 /* MainView.xib */,
 				FD92822C274292C50042A399 /* Assets.xcassets */,
 				FD92822E274292C50042A399 /* LaunchScreen.storyboard */,
 				FD928231274292C50042A399 /* Info.plist */,
@@ -229,7 +265,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10E500127FCA2B7009DCB90 /* Localizable.strings in Resources */,
 				FD928230274292C50042A399 /* LaunchScreen.storyboard in Resources */,
+				B10E4FFF27FC91E7009DCB90 /* MainView.xib in Resources */,
 				FD92822D274292C50042A399 /* Assets.xcassets in Resources */,
 				FD92822B274292C40042A399 /* Main.storyboard in Resources */,
 			);
@@ -284,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10E500327FCA77F009DCB90 /* ThemeApp.swift in Sources */,
 				2EBA217327F9916C00ED37AC /* UtilDate.swift in Sources */,
 				2EBA216827F98E4F00ED37AC /* MatchViewController.swift in Sources */,
 				FD928228274292C40042A399 /* ViewController.swift in Sources */,
@@ -291,6 +330,7 @@
 				2EA6B52327FC705100411C78 /* Validator.swift in Sources */,
 				FD928224274292C40042A399 /* DatingAppDelegate.swift in Sources */,
 				2EBA216A27F98E5D00ED37AC /* ChatViewController.swift in Sources */,
+				B10E4FFD27FC86AA009DCB90 /* Navigator+Extension.swift in Sources */,
 				2EBA217627F991F800ED37AC /* Constanst.swift in Sources */,
 				2EA6B52127FC704400411C78 /* UserManagement.swift in Sources */,
 				2EBA217427F9916C00ED37AC /* LogS.swift in Sources */,
