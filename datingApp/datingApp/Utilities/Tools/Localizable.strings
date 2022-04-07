@@ -8,3 +8,6 @@
 
 "id_metwork_unavailable" = "No network connectivity";
 "id_connecting" = "Connecting ...";
+"id_policy_welcome_view" = "Khi bấm Tạo tài khoản hoặc Đăng nhập, bạn đồng ý với Điều khoản của chúng tôi. Tìm hiểu thêm về cách chúng tôi xử lý dữ liệu của bạn trong Chính Sách Quyền Riêng Tư và Chính Sách Về Cookie của chúng tôi"
+"id_crashing_welcome_view" = "Sự cố khi đăng nhập?"
+
